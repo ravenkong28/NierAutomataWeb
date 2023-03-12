@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style.css" rel="stylesheet" >
+    <link href="regvalidation.js" rel="stylesheet" >
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href><img src="images/logo.png" alt="kenshin impact logo" /></a>
+            </div>
+            <nav>
+                <button id="nav toggle" class="top-menu">
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                </button>
+                <ul id="nav-menu-cont">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Character.html">Characters</a></li>
+                    <li><a href="AboutGame.html">About Game</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="button log-reg">
+                <a href="Login.html" class="login-register-button"><span class="skew-fix">Login / Register</span></a>
+            </div>
+        </div>
+    </header> 
+    
+    <section class= reg-page>
+        <form class="reg-box" name="registration" onsubmit="return formValidation();">
+            <h1>Register</h1>
+            <h2>Name : </h2>
+            <div class="reg-name">
+                <input type="text" name="name">
+            </div>
+            <h3>Email : </h3>
+            <div class="reg-email">
+                <input type="text" name="email">
+            </div>
+            <h4>Gender : </h4>
+            <div class="reg-gender">
+                <input type="radio" id="male" name="msex" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="fsex" value="female">
+                <label for="female">Female</label>
+            </div>
+            <h5>City : </h5>
+            <div class="reg-city">
+                <select id="city" name="city">
+                    <option selected="" value="Default">(Please select a city)</option>
+                    <option value="bogor">Bogor</option>
+                    <option value="bekasi">Bekasi</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <h6>Address : </h6>
+            <div class="reg-adress">
+                <textarea rows="2" cols="30" name="street"></textarea>
+            </div>
+            <div class="reg-button">
+                <div class="container">
+                    <button type="submit" name="submit" value="submit">Register</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <script src="regvalidation.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <h3> Kenshin Impact </h3>
+            <p>Adipiscing tristique risus nec feugiat in fermentum posuere urna nec. Sit amet commodo nulla facilisi nullam.</p>
+            <ul class="socials">
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/facebook.png"></a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png"></i></a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png"></i></a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/youtube.png"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021. designed by <span>2301947874,2301874941,2301923294</span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

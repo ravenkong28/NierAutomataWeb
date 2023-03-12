@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style.css" rel="stylesheet" >
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href><img src="images/logo.png" alt="kenshin impact logo" /></a>
+            </div>
+            <nav>
+                <button id="nav toggle" class="top-menu">
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                </button>
+                <ul id="nav-menu-cont">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Character.html">Characters</a></li>
+                    <li><a href="AboutGame.html">About Game</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="button log-reg">
+                <a href="Login.html" class="login-register-button"><span class="skew-fix">Login / Register</span></a>
+            </div>
+        </div>
+    </header> 
+
+    <div class= "gallery-page-background">
+        <section class="galley-body">
+        <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <div class="slide first">
+                <img src="images/gameintro1.jpeg" alt="aa">
+            </div>
+            <div class="slide">
+              <img src="images/gameintro2.jpeg" alt="bb">
+          </div>
+          <div class="slide">
+              <img src="images/gameintro3.jpeg" alt="cc">
+          </div>
+          <div class="slide">
+              <img src="images/gameintro2.jpeg" alt="dd">
+          </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+    
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        </div>
+    </section>
+    </div>
+    
+
+    <footer>
+        <div class="footer-content">
+            <h3> Kenshin Impact </h3>
+            <p>Adipiscing tristique risus nec feugiat in fermentum posuere urna nec. Sit amet commodo nulla facilisi nullam.</p>
+            <ul class="socials">
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/facebook.png"></a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png"></i></a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png"></i></a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/youtube.png"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021. designed by <span>2301947874,2301874941,2301923294</span></p>
+        </div>
+    </footer>
+    
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter=1;
+        }
+    },5000);
+    </script>
+</body>
+</html>
